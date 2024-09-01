@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zay Store</title>
+    <style>
+        /* Resetting default browser styles */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background for the entire page */
+        body {
+            background: url('Wallpaper Manga One piece.jpeg') no-repeat center center fixed;
+            background-size: cover; /* Cover the entire background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            position: relative;
+            width: 100%;
+            background: #007bff; /* Blue background for the top section */
+            padding: 0; /* Reset padding */
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            z-index: 0;
+            /* Aspect ratio for 16:9, adjusted to be slightly smaller */
+            height: 0;
+            padding-top: 50%; /* Adjusted for a smaller height */
+        }
+
+        .header-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('images/header-background.jpg') no-repeat center center;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        .header-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            animation: zoomIn 1s ease-out;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(1.1);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Main section styles */
+        main {
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .social-media {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        @keyframes cardHover {
+            from {
+                transform: translateY(0);
+                background-color: #fff;
+            }
+            to {
+                transform: translateY(-10px);
+                background-color: #f0f8ff; /* Light blue background on hover */
+            }
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            text-align: center;
+            width: 100%;
+            max-width: 350px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .card img {
+            background-color: transparent; /* Ensure PNGs show correctly */
+        }
+
+        .card:hover {
+            animation: cardHover 0.3s forwards;
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #007bff; /* Blue text for headings */
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card .icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        footer {
+            background: rgba(0, 123, 255, 0.8); /* Semi-transparent blue background */
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            animation: slideIn 0.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1); /* Slightly enlarge the button on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-background"></div> <!-- Blue background section -->
+        <img src="goblok.png" alt="Header Image" class="header-image">
+        <!-- Removed the header text -->
+    </header>
+    
+    <main>
+        <section class="social-media">
+            <div class="card">
+                <h2>Youtube gua cuy</h2>
+                <a href="https://www.youtube.com/@oiiaxrl4965" target="_blank">
+                    <img src="youtube.png" alt="YouTube Icon" class="icon">
+                    <p>@oiiaxrl4965</p>
+                </a>
+            </div>
+            <div class="card">
+                <h2>nihh tiktok</h2>
+                <a href="https://www.tiktok.com/@oiaril?_t=8pDqeRY4fiS&_r=1" target="_blank">
+                    <img src="tik-tok.png" alt="TikTok Icon" class="icon">
+                    <p>@oiaril</p>
+                </a>
+            </div>
+            <div class="card">
+                <h2>Instagram</h2>
+                <a href="https://www.instagram.com/jualakunmlzay_store?igsh=MTNzNGFxc3k1OXFpcw==" target="_blank">
+                    <img src="instagram.png" alt="Instagram Icon" class="icon">
+                    <p>@jualakunmlzay_store</p>
+                </a>
+            </div>
+            <div class="card">
+                <h2>Grup jb amanah</h2>
+                <a href="https://chat.whatsapp.com/H8XGGIX3Z0M5xab7ckbbGm" target="_blank">
+                    <img src="whatsapp.png" alt="WhatsApp Icon" class="icon">
+                    <p>Grup JB(zay)1</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Tempatnya joki akun termurah dan berkualitas hanya di Zay Store 085154982143(whatsapp)</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
